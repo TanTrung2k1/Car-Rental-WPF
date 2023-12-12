@@ -1,0 +1,56 @@
+﻿<Page x:Name="pgStaff" x:Class="NguyenTanTrungWPF.ViewPage.StaffPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:NguyenTanTrungWPF.ViewPage"
+      mc:Ignorable="d" 
+      d:DesignHeight="640" d:DesignWidth="800"
+      Title="StaffPage">
+
+    <Grid>
+        <Canvas Margin ="15" Background="AliceBlue">
+            <Label x:Name="lbTitle" Content="Manage staff" Canvas.Left="316" Canvas.Top="10" FontFamily="Tempus Sans ITC" FontSize="24" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <GroupBox Height="140" Header="Information of staff" Width="755" Canvas.Top="56">
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="40"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="327"/>
+                        <ColumnDefinition Width="327"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <Label Content="Staff ID" Padding="0 10" Width="100" Margin="6 0 0 0"/>
+                        <TextBox x:Name="txtStaffID" Width="200" Padding="0 4 0 4" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+                        <Label Content="Full name" Padding="0 10" Width="100" Margin="6 0 0 0"/>
+                        <TextBox x:Name="txtFullName" Width="200" Padding="0 4 0 4" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                        <Label Content="Email" Padding="0 10" Width="100" Margin="6 0 0 0"/>
+                        <TextBox x:Name="txtEmail" Width="200" Padding="0 4 0 4" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+                        <Label Content="Password" Padding="0 10" Width="100" Margin="6 0 0 0"/>
+                        <PasswordBox x:Name="txtPassword" Width="200" Padding="0 4 0 4" VerticalAlignment="Center"/>
+                    </StackPanel>
+                    <Button Grid.Row="2"  Grid.Column="0" x:Name="btnUpdate" Content="Update" Margin="20 4 20 4" Width="80" Click="btnUpdate_Click"/>
+                    <Button Grid.Row="2"  Grid.Column="1" x:Name="btnSave" Content="Save" Margin="20 4 20 4" Width="80" Click="btnSave_Click"/>
+                </Grid>
+            </GroupBox>
+            <GroupBox Height="85" Header="Functions" Width="755" HorizontalAlignment="Center" Canvas.Top="281" VerticalAlignment="Top">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button x:Name="btnCarManage" Content="Car Manage" Margin="40 4 40 4" Width="110" Click="btnCarManage_Click" />
+                    <Button x:Name="btnCreateCustomer" Content="Create customer" Margin="40 4 40 4" Width="110" Click="btnCreateCustomer_Click" />
+                    <Button x:Name="btnReport" Content="Report" Margin="40 4 40 4" Width="110" Click="btnReport_Click" />
+                </StackPanel>
+            </GroupBox>
+            
+
+        </Canvas>
+    </Grid>
+</Page>

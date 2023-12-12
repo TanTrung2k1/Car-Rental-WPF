@@ -1,0 +1,20 @@
+﻿<Application x:Class="NguyenTanTrungWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:NguyenTanTrungWPF"
+             StartupUri="/LoginWindow.xaml">
+    <Application.Resources>
+        <Style TargetType="Label">
+            <Setter Property="FontFamily" Value="Palatino Linotype"/>
+            <Setter Property="FontSize" Value="14"/>
+        </Style>
+        <Style TargetType="GroupBox">
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="Cascadia Mono ExtraLight"/>
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="Background" Value="#FFF7F7DE" />
+            <Setter Property="FontFamily" Value="Palatino Linotype"/>
+        </Style>
+    </Application.Resources>
+</Application>

@@ -1,0 +1,42 @@
+﻿<Window x:Class="NguyenTanTrungWPF.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NguyenTanTrungWPF"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="350" Width="515" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize" >
+    <Window.Resources>
+        
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="10 0"/>
+            <Setter Property="Padding" Value="5"/>
+            <Setter Property="FontFamily" Value="Palatino Linotype"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="Width" Value="80"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Background" Value="#FFF7F7DE" />
+        </Style>
+    </Window.Resources>
+    <Grid Background="AliceBlue">
+        <Canvas Background="White" Margin="15,15,15,15" Grid.ColumnSpan="2" >
+            <Label x:Name="lbTitle" Content="Car Rental System" Canvas.Left="147" Canvas.Top="19" FontFamily="Tempus Sans ITC" FontSize="24" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" Width="410" Height="50" Canvas.Left="35" Canvas.Top="78" VerticalAlignment="Top">
+                <Label Content="Email" Padding="0 15" Width="100" HorizontalAlignment="Left" />
+                <TextBox x:Name="txtEmail" Padding="8" Width="300" VerticalAlignment="Center" FontSize="14"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Width="410" Height="50" Canvas.Left="35" Canvas.Top="133" VerticalAlignment="Top" HorizontalAlignment="Center">
+                <Label Content="Password" Padding="0 15" Width="100" HorizontalAlignment="Left" />
+                <PasswordBox x:Name="txtPassword" Width="300" Padding="8" VerticalAlignment="Center" FontSize="14"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Width="198" Height="50" Canvas.Left="142" Canvas.Top="209" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Button x:Name="btnLogin" Content="Login" Click="btnLogin_Click"/>
+                <Button x:Name="btnClear" Content="Clear" Click="btnClear_Click"/>
+            </StackPanel>
+
+        </Canvas>
+
+    </Grid>
+</Window>
